@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/light_mode.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./img/IMG_0696.PNG" type="image/png">
+    <title>timurzubcenko</title>
+</head>
+
+<body>
+
+    <header class="heeader">
+        <div class="top" id="header-top">
+            <div class="interior_top container">
+                <div class="logo">
+                    <img src="./img/IMG_0696.PNG" alt="">
+                    <h3>Timur</h3>
+                </div>
+                <!-- <div class="input">
+                    <input type="text" placeholder="Search">
+                    <i class="bi bi-search"></i>
+                </div> -->
+                <div class="header_burger" onclick="clickBurger()">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <a href="">
+                            <li class="active">Home</li>
+                        </a>
+                        <a href="./html/works.html" class="header_link" onclick="clickHeaderLink()">
+                            <li>Works</li>
+                        </a>
+                        <a href="./html/send_massage.html" class="header_link" onclick="clickHeaderLink()">
+                            <li>Send massage</li>
+                        </a>
+                        <a href="#" class="header_link" onclick="clickHeaderLink()">
+                            <li onclick="clickFollow()">Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="interior_section container">
+                <div class="about_me" data-aos="fade-down">
+                    <div class="logo">
+                        <img src="./img/IMG_0696.PNG" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2 class="name">
+                            Timur Zubchenko
+                        </h2>
+                        <p>Hello, I'm Timur, I'm 16 years old and I'm a web developer from Ukraine, namely the city of
+                            Zaporozhye.</p>
+                        <a href="https://github.com/timurzubcenko" class="link">
+                            <i class="bi bi-globe"></i>
+                            <h4>GitHub</h4>
+                        </a>
+                        <div class="main_btn">
+                            <div class="btn" id="btn" onclick="clickFollow()">
+                                Follow
+                            </div>
+                            <div class="btn_share" onclick="copyToClipboard()">
+                                <i class="bi bi-share-fill"></i>
+                            </div>
+                        </div>
+                        <!-- <div class="social">
+                            <a href="">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </div> -->
+                        <div class="data">
+                            Member since Aug 22, 2022
+                        </div>
+                    </div>
+                </div>
+                <div class="items" data-aos="fade-up">
+                    <div class="tabs">
+                        <ul>
+                            <li class="list active" data-tab="#tab_1">My project</li>
+                            <li class="list" data-tab="#tab_2">Panto</li>
+                            <li class="list" data-tab="#tab_3">Treloo </li>
+                            <li class="list" data-tab="#tab_4">Education</li>
+                        </ul>
+                    </div>
+                    <div class="cards main active" id="tab_1">
+                        <div class="card">
+                            <img src="./img/screen_1.png" alt="">
+                            <div class="name">
+                                <a href="https://timurzubcenko.github.io/Panto/">
+                                    <h3>Pant - Homepage</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/treloo.png" alt="">
+                            <div class="name">
+                                <a href="https://timurzubcenko.github.io/Treloo/">
+                                    <h3>Treloo - Homepage</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/artist.png" alt="">
+                            <div class="name">
+                                <a href="https://timurzubcenko.github.io/SESSIONartist/">
+                                    <h3>SESSION artist - Homepage</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/c.png" alt="">
+                            <div class="name">
+                                <a href="https://timurzubcenko.github.io/Education/">
+                                    <h3>Education - Homepage</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/2.png" alt="">
+                            <div class="name">
+                                <a href="https://timurzubcenko.github.io/DSI/">
+                                    <h3>DSI - Homepage</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/skreen1.png" alt="">
+                            <div class="name">
+                                <a href="https://timurzubcenko.github.io/Cootels/">
+                                    <h3>Cootels - Homepage</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards" id="tab_2">
+                        <div class="image">
+                            <img src="./img/full_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="cards" id="tab_3">
+                        <div class="image">
+                            <img src="./img/full_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="cards" id="tab_4">
+                        <div class="image">
+                            <img src="./img/full_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectin_2">
+            <div class="interior_section_2 container">
+                <div class="txt">
+                    <h2>About Me</h2>
+                    <p>Hello, I'm Timur, I'm 16 years old and I'm a web developer from Ukraine, namely the city of
+                        Zaporozhye. create adaptive, cross-browser and convenient layout I am easy to work with and it
+                        is
+                        important to me that the client is satisfied!
+                    </p>
+                    <p> <span>My skills:</span> HTML (HTML5), CSS (CSS3), Js,jQuery, SCSS, Flexbox, БЭМ.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="interior_footer">
+            <div class="txt_footer" data-aos="fade-up">
+                <h1>Contacts</h1>
+            </div>
+            <div class="social" data-aos="zoom-in">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com/timurzubcenko?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/timurzubcenko"><i class="bi bi-github"></i></a>
+                <a href="https://t.me/timurzubchenko"><i class="bi bi-telegram"></i></a>
+            </div>
+            <p class="end_footer">subscribe to me <br class="brfoot"> on
+                Telegram, Instagram, GitHub, Twitter</p>
+        </div>
+    </footer>
+
+    <div class="container-switch">
+        <div class="switch-container">
+            <input type="checkbox" id="switch">
+            <div class="switch-color"></div>
+            <label id="label-1" for="switch"><i class="bi bi-x"></i></label>
+        </div>
+    </div>
+
+    <div class="popup_copytxt">
+        <div class="popup">
+            <p>Link copied</p>
+            <i class="bi bi-check-lg"></i>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

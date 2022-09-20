@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #141416;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: #0385ff90;
+    /* Safari */
+}
+
+::-moz-selection {
+    background: #0385ff;
+    /* Firefox */
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heeader .top {
+    padding: 20px 30px;
+    border-bottom: 1px solid #353945;
+}
+
+.heeader .interior_top {
+    color: #F4F5F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.heeader .top .logo {
+    display: flex;
+    gap: 10px;
+}
+
+.heeader .top .logo img {
+    max-width: 30px;
+}
+
+.heeader .top ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.heeader .top ul li {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    text-align: center;
+
+    /* Neutrals/4 */
+
+    color: #777E91;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.heeader .top ul li:hover {
+    color: #3772FF;
+    transition: all 0.3s;
+}
+
+.heeader .top ul li.active {
+    color: #3772FF;
+}
+
+.main {
+    margin: 100px 0;
+}
+
+.inter_main {
+    display: flex;
+    justify-content: center;
+}
+
+.iframe::-webkit-scrollbar {
+    width: 0;
+}
+
+iframe .geS5n {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+footer {
+    padding: 60px 40px;
+    border-top: 1px solid #353945;
+}
+
+.interior_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.interior_footer .txt_footer h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Black */
+    color: white;
+
+
+}
+
+.interior_footer .txt_footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0 0 80px;
+}
+
+.interior_footer .txt_footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    /* Black */
+}
+
+.interior_footer .txt_footer .btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+    max-width: 180.5px;
+    color: #FFFFFF;
+    background: #070707;
+    border-radius: 20px;
+    padding: 7px 22px;
+
+}
+
+.interior_footer .social {
+    font-size: 40px;
+    display: flex;
+    gap: 60px;
+    margin: 0 0 40px;
+}
+
+.interior_footer .social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background: #282a33;
+    box-shadow: 0 5px 15px -5px #000;
+    margin: 10px;
+    border-radius: 30%;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+}
+
+.interior_footer .social a:hover {
+    color: #42d2ff;
+}
+
+.interior_footer .social a i {
+    position: relative;
+    z-index: 4;
+    transition: 0.3s ease-in-out;
+}
+
+.interior_footer .social a::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(#00c6ff, #0072ff);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.interior_footer .social a:hover::before {
+    animation: onHover 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+
+@keyframes onHover {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.interior_footer .end_footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #828282;
+}
