@@ -52,7 +52,7 @@ function copyToClipboard(text) {
 }
 
 document.querySelector('.btn_share').addEventListener('click', function () {
-    copyToClipboard("https://timurzubcenko.github.io/Portfolio/")
+    copyToClipboard("https://timurzubcenko.github.io/Portfolio-Light_Night_Mode/")
     popupCopytxt.classList.add('active')
 });
 
